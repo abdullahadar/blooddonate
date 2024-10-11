@@ -1,0 +1,134 @@
+@media screen and (max-width:576px) {
+
+    body {
+    
+        max-width: 576px;
+        margin: 0px auto;
+
+    }
+
+    /* Hamburger Menu Icon */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
+
+    /* Hide dropdown menu by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #f62b2b; /* Red background */
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    font-weight: 550;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Divider */
+    display: block;
+}
+
+
+.dropdown-menu.active {
+    display: flex; /* Show menu when active */
+}
+
+
+/* -----------container part-------- */
+    .container {
+         flex-direction: column;
+        
+       
+
+    }
+
+    .nav-com {
+        flex-direction: column;
+        gap: 10px; /* Adjust gap for small screens */
+    }
+
+    .bannar-img {
+        height: 100%; /* Reduce banner height */
+        filter: blur(3px); /* Lessen blur for small screens */
+    }
+
+
+    .responsive-text {
+        text-align: center;
+      
+       
+    } 
+
+    .container-1 {
+        margin-top: 50px; /* Reduce margin-top */
+        padding: 10px; /* Add padding */
+        
+    }
+
+    .container-1 p {
+        font-size: 0.9em; /* Decrease font size for mobile */
+    }
+
+    .container-1 button {
+        padding: 8px; /* Adjust button size */
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    #slideshow img{
+        height: 100%;
+        width: 100%;
+    }
+    
+
+
+
+    /* --------footer section----- */
+  
+    .red-part{
+        margin-top: -1px;
+    }
+
+
+
+    .red-part, .black-part {
+        flex-direction: column; /* Stack footer content */
+        text-align: center;
+        height: 100%;
+     padding: 20px;
+ 
+  
+    }
+
+
+
+    .about{
+       width: 100%;
+       
+    }
+
+    .search {
+        flex-direction: column; /* Stack search box content */
+        height: auto;
+    }
+
+    .compatible {
+        flex-direction: column; /* Stack content */
+        margin-left: 0;
+        width: 100%; /* Make full-width */
+    }
+
+   
+
+}

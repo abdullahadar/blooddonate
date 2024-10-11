@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloodology</title>
+    <script src="https://kit.fontawesome.com/9f358cce60.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style>
+
+    </style>
+</head>
+
+
+<body>
+    <!-- navigation bar -->
+    <div class="navigation">
+        <div class="nav-logo">
+            <div class="logo"></div>
+        </div>
+
+        <!-- Hamburger Icon (visible on mobile) -->
+
+        <div class="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <!-- Dropdown Menu -->
+        <div class="nav-com dropdown-menu ">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#">About Us</a>
+            <a href="Search-donors.html">Search Donors</a>
+            <a href="Add-Blood-Request.html">Add Blood Request</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <script>
+        // Get the hamburger and dropdown menu elements
+        const hamburger = document.querySelector('.hamburger');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        // Add event listener for hamburger click
+        hamburger.addEventListener('click', () => {
+            // Toggle the 'active' class on the dropdown menu to show or hide it
+            dropdownMenu.classList.toggle('active');
+        });
+
+    </script>
+
+
+    <!-- Container part -->
+    <div class="container">
+
+
+        <div class=" bannar-img "></div>
+
+
+        <div class="container-1">
+            <div class="responsive-text">
+                <h1>The gift of blood is a gift</h1>
+                <h1>to someone's life</h1>
+            </div>
+
+            <p>Bloodology help with anything related to blood. It helps manage blood donations and events <br>where
+                people can give blood. It also links up donors with people who need blood. <br> Bloodology makes it
+                simple to get involved in this important work.</p>
+            <button><a href="Add-Blood-Request.html">Add Blood Request</a></button>
+            <button> <a href="signup.html">Join as Donors</a></button>
+        </div>
+        <div class="container-pic">
+            <div id="slideshow">
+                <img src="{% static 'index/image/img1.png' %}" id="image" />
+            </div>
+            <!-- Java Script for changing picture -->
+            <script>
+                var images = [
+                    "image/img1.png",
+                    "image/img2.png",
+                    "image/img3.png",
+                    "image/img6.png",
+                    "image/img7.png",
+                ];
+                var currentIndex = 0;
+                var image = document.getElementById("image");
+                setInterval(function () {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    image.src = images[currentIndex];
+                }, 3000); 
+            </script>
+        </div>
+    </div>
+
+
+
+
+    
+
+        <!-- -------footer section-------------- -->
+
+    <footer>
+
+        <!---------------------------- red part -------------------->
+
+
+        <div class="red-part">
+
+
+            <!----- About----- -->
+
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Bloodology is a website made by student of premier University for their final project, a tool to help
+                    with anything related to blood. It helps manage blood donations and events where people can give
+                    blood. It also links up donors with people who need blood. Bloodology makes it simple to get involved in this important work.</p>
+
+
+            </div>
+
+
+            <!-- important-link -->
+
+
+            <div class="important-link">
+
+                <h3>important-link</h3>
+                <a href="">Home</a>
+                <a href="">Add Add-Blood-Request</a>
+                <a href="">Search Donor</a>
+                <a href="">Compatible blood type Donors</a>
+
+
+            </div>
+
+
+
+            <!-- ------Advantage---- -->
+
+            <div class="advantage">
+                <a href="">Advantage of Donating Blood</a>
+                <a href="">Blood blood-donation-tips</a>
+                <a href="">All question-about-blood</a>
+
+
+            </div>
+
+        </div>
+
+
+        <!--------------------------- black part -------------------->
+
+
+
+
+        <div class="black-part">
+
+            <!----- logo------- -->
+            <div>
+                <div class="logo"></div>
+            </div>
+
+            <!----- Address--- -->
+
+            <div class="address">
+                <h3>Address</h3>
+                <p>Academic Building-4</p>
+                <p><i class="fa-regular fa-message"></i> info@puc.ac.bd</p>
+                <p><i class="fa-solid fa-location-dot"></i> HazariLane, Kotwali, Chittagong.</p>
+                <p><i class="fa-solid fa-phone-volume"></i> +88-031-657892.</p>
+            </div>
+
+
+
+
+            <!-------- Advice  ----->
+            <div class="msg">
+                <h3>Advice & Complain here</h3>
+                <textarea class="t-aria" id="new_message" name="new_message" placeholder="Type in your message" rows="4"
+                    cols="40"></textarea><br>
+                <button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Sent</button>
+            </div>
+        </div>
+
+
+
+        <div class="copyright">
+            Copyright © All rights reservs
+        </div>
+
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

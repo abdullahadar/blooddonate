@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+/************ Navigation var *************************/
+/* Global Styling for Navigation */
+.navigation {
+    height: 70px;
+    background-color: rgb(241, 23, 23);
+    color: white;
+    display: flex;
+    justify-content: space-around; /* Space items apart */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    height: 65px;
+    width: 120px;
+}
+
+.logo {
+    background-image: url('image/final-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 65px;
+    width: 120px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: rgb(248, 244, 244);
+    font-weight: 550;
+    gap: 5px;
+}
+
+.nav-com {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hamburger Icon (Hidden by default on larger screens) */
+.hamburger {
+    display: none;
+
+}
+
+
+.container{
+    
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+
+/* ---------------bannar img--------- */
+
+.bannar-img {
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(./image/bannar7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    position: absolute;
+    opacity: calc();
+    width: 100%;
+    height: 560px;
+}
+
+.responsive-text {
+   
+    flex-wrap: wrap; /* Allow text to wrap */
+    justify-content: start; /* Center the text */
+   
+}
+
+
+.container-1{
+    margin-top: 130px;
+    position: relative;
+    color: #dad4d4;
+}
+.container-1 p{
+    margin-top: 30px;
+}
+.container-1 button{
+    
+    margin-top: 30px;
+    background-color: red;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 10px;
+}
+.container-1 button:hover{
+    background-color: rgb(17, 16, 16);
+    
+}
+.container-1 button a{
+    text-decoration: none;
+    color: white;
+}
+.container-pic{
+    margin-top: 5rem;
+    position: relative;
+}
+#slideshow img{
+    height: 400px;
+    width: 400px;
+}
+
+
+
+
+
+
+/*------------ footer section ----------------*/
+
+
+
+
+
+.red-part{
+    margin-top: 5rem;
+    height: 250px;
+    background-color: rgb(240, 60, 60);
+    color: rgb(243, 243, 243);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  padding-left:10rem ;
+  padding-right: 10rem;
+}
+
+.about{
+   width: 40%;
+   
+}
+
+.about  h3{
+    font-weight: 900;
+    font-size: large;
+    margin-bottom: 10px;
+
+}
+
+
+.important-link {
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    line-height: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.important-link a{
+
+    text-decoration: none;
+    color: white;
+}
+
+.important-link  h3{
+    font-weight: 900;
+    font-size: large;
+    margin-bottom: 10px;
+
+}
+
+
+
+.advantage {
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    
+} 
+
+
+.advantage a{
+    
+    text-decoration: none;
+    color: white;
+font-size:large;
+    
+  
+
+}
+
+
+.black-part{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(22, 21, 21);
+    color: rgb(202, 192, 192);
+}
+
+
+
+
+.address{
+    text-align: center;
+    line-height: 25px;
+}
+.msg textarea{
+    background-color: rgb(29, 29, 37);
+    border-radius: 5px;
+}
+.msg button{
+    background-color: rgb(6, 110, 110);
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 0.5px solid gray;
+    cursor: pointer;
+}
+.msg button:hover{
+    background-color: rgb(75, 72, 72);
+}
+
+
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid white;
+    background-color: rgb(13, 13, 20);
+    height: 40px;
+    color: rgb(238, 238, 238);
+}
